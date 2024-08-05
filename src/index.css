@@ -18,3 +18,15 @@
   padding-left: 5rem;
   padding-right: 5rem;
 }
+
+/* Reviews scrollbar */
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

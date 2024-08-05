@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import Hero from "./Hero";
 import InfoComponent from "./InfoComponent";
+import Review from "./Reviews/Review";
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
         <Hero />
         <InfoComponent />
       </div>
+      <Review />
     </section>
   );
 }
