@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "./Hero";
 import InfoComponent from "./InfoComponent";
 import Review from "./Reviews/Review";
+import Banner from "./Banner";
 
 function Homepage() {
   return (
@@ -13,6 +14,7 @@ function Homepage() {
         <InfoComponent />
       </div>
       <Review />
+      <Banner />
     </section>
   );
 }

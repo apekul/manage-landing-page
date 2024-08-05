@@ -57,26 +57,29 @@ function Review() {
         onMouseLeave={handleMouseUp}
         // className="scroll-container py-10 flex  gap-10 overflow-x-auto bg-blue-200 3xl:bg-red-200 w-full
         // whitespace-nowrap"
-        className={`py-10 flex gap-10 w-full scroll-container ${
+        className={`pt-20 pb-10 flex w-full scroll-container ${
           isOverflow ? "overflow-x-auto" : "overflow-hidden justify-center"
         }`}
       >
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 mx-5">
           {reviewsData.map((review, index) => (
             <li
               key={index}
-              className="bg-[#FAFAFA] p-10 w-[45rem] flex flex-col"
+              className="bg-[#FAFAFA] p-10 w-[30rem] flex flex-col text-center relative"
             >
-              <img src={review.icon} alt="icon" className="w-12 h-12" />
-              <p className="mt-4 font-semibold">{review.name}</p>
-              <p className="mt-2 text-gray-600 text-wrap bg-red-200">
-                {review.review}
+              <img
+                src={review.icon}
+                alt="icon"
+                className="w-14 h-14 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              />
+              <p className="mt-4 font-semibold text-dark-blue">{review.name}</p>
+              <p className="mt-2 text-wrap text-dark-grayish-blue">
+                "{review.review}"
               </p>
             </li>
           ))}
         </ul>
       </div>
-
       <button className="bg-bright-red px-8 py-3 rounded-full text-white shadow-bright-red shadow-md">
         Get Started
       </button>
