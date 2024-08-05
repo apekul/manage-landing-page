@@ -8,8 +8,13 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/* Ignore breaks on mobile */
+/* br {
+  display: none;
+} */
+
 .container {
   max-width: 1440px;
-  /* padding-left: 3rem;
-  padding-right: 3rem; */
+  padding-left: 7rem;
+  padding-right: 7rem;
 }

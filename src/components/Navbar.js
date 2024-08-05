@@ -4,7 +4,7 @@ import logoImg from "../assets/images/logo.svg";
 const navItems = ["Pricing", "Product", "About Us", "Careers", "Community"];
 function Navbar() {
   return (
-    <nav>
+    <nav className="z-10">
       <ul className="container w-full py-10 mx-auto flex items-center justify-between">
         <li>
           <img src={logoImg} alt="logo" className="logo" />
@@ -17,7 +17,7 @@ function Navbar() {
           ))}
         </li>
         <li>
-          <button className="bg-bright-red px-8 py-3 rounded-full text-white">
+          <button className="bg-bright-red px-8 py-3 rounded-full text-white shadow-bright-red shadow-md">
             Get Started
           </button>
         </li>
