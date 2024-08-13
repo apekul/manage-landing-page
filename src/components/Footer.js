@@ -8,6 +8,7 @@ import twitterIcon from "../assets/images/icon-twitter.svg";
 import pinterestIcon from "../assets/images/icon-pinterest.svg";
 
 const footerNav = ["Home", "Pricing", "Products", "About Us"];
+const footerLinks = ["Careers", "Community", "Privacy Policy"];
 const socialIcons = [
   facebookIcon,
   youtubeIcon,
@@ -43,21 +44,36 @@ function Footer() {
           </svg>
           <div className="flex gap-3">
             {socialIcons.map((icon, index) => (
-              <img src={icon} key={index} alt="icon" />
+              <img
+                src={icon}
+                key={index}
+                alt="icon"
+                className="text-white cursor-pointer hover:text-bright-red duration-150"
+              />
             ))}
           </div>
         </li>
         <li className="flex flex-col gap-3 text-[#E0E1E6]">
           {footerNav.map((item, index) => (
-            <a href="/" key={index}>
+            <a
+              href="/"
+              key={index}
+              className="hover:text-bright-red duration-150"
+            >
               {item}
             </a>
           ))}
         </li>
         <li className="flex flex-col gap-3 text-[#E0E1E6]">
-          <a href="/">Careers</a>
-          <a href="/">Community</a>
-          <a href="/">Privacy Policy</a>
+          {footerLinks.map((item, index) => (
+            <a
+              href="/"
+              key={index}
+              className="hover:text-bright-red duration-150"
+            >
+              {item}
+            </a>
+          ))}
         </li>
 
         <li className="flex flex-col justify-between text-end">
@@ -67,7 +83,9 @@ function Footer() {
               placeholder="Updates in your inbox..."
               type="text"
             />
-            <button className="bg-[#F3603C] px-5 py-3 rounded-full">Go</button>
+            <button className="bg-bright-red px-5 py-3 rounded-full cursor-pointer hover:brightness-125 duration-150">
+              Go
+            </button>
           </form>
           <p className="text-xs text-gray-500">
             Compyright 2020. All Rights Reserved

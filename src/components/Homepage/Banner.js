@@ -11,7 +11,7 @@ function Banner() {
         <h1 className="text-white text-4xl font-[500]">
           Simplify how your team <br /> works today.
         </h1>
-        <button className="text-bright-red px-8 py-3 rounded-full bg-white shadow-bright-red shadow-md">
+        <button className="text-bright-red px-8 py-3 rounded-full bg-white shadow-bright-red shadow-md hover:brightness-125 transition-all duration-150">
           Get Started
         </button>
       </div>

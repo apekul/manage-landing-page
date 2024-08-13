@@ -80,7 +80,7 @@ function Review() {
           ))}
         </ul>
       </div>
-      <button className="bg-bright-red px-8 py-3 rounded-full text-white shadow-bright-red shadow-md">
+      <button className="bg-bright-red px-8 py-3 rounded-full text-white shadow-bright-red shadow-md cursor-pointer hover:brightness-125 transition-all duration-150">
         Get Started
       </button>
     </article>
